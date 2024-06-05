@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+.off-scroll::-webkit-scrollbar {
+	@apply w-[6px] h-[6px];
+}
+.off-scroll::-webkit-scrollbar-track {
+	border-radius: 100vh;
+	@apply bg-white/50 h-[6px];
+}
+.off-scroll::-webkit-scrollbar-track:horizontal {
+	@apply hidden;
+}
+.off-scroll::-webkit-scrollbar-thumb {
+	border-radius: 100vh;
+	@apply bg-white;
+}
+.off-scroll::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
